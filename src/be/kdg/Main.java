@@ -1,8 +1,10 @@
 package be.kdg;
 
 import be.kdg.model.ZEE_SLAGModel;
-import be.kdg.view.ZEE_SLAGPresenter;
-import be.kdg.view.ZEE_SLAGView;
+import be.kdg.view.pregamelobby.PreGameLobbyPresenter;
+import be.kdg.view.pregamelobby.PreGameLobbyView;
+import be.kdg.view.titlescreen.ZEE_SLAGPresenter;
+import be.kdg.view.titlescreen.ZEE_SLAGView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -14,9 +16,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         ZEE_SLAGModel model =
                 new ZEE_SLAGModel();
-        ZEE_SLAGView view =
-                new ZEE_SLAGView();
-        new ZEE_SLAGPresenter(model, view);
+        PreGameLobbyView view =
+                new PreGameLobbyView();
+        new PreGameLobbyPresenter(model, view);
         primaryStage.setScene(new Scene(view));
         primaryStage.show();
     }

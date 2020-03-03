@@ -1,4 +1,4 @@
-package be.kdg.view;
+package be.kdg.view.titlescreen;
 
 import be.kdg.model.ZEE_SLAGModel;
 
