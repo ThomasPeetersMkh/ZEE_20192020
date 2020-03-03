@@ -17,13 +17,14 @@ public class PreGameLobbyPresenter {
     }
 
     private void addEventHandlers() {
-view.getBoardsizeoptions().setOnMousePressed (new EventHandler<MouseEvent>() {
-    @Override
-    public void handle(MouseEvent mouseEvent) {
-        updateView();
+        view.getBoardsizeoptions().setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                updateView();
+            }
+        });
     }
-});
-    }
+
 
     private void updateView() {
         this.view.drawRaster(this.view.getBoardsize());
