@@ -16,9 +16,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         ZEE_SLAGModel model =
                 new ZEE_SLAGModel();
-        PreGameLobbyView view =
-                new PreGameLobbyView();
-        new PreGameLobbyPresenter(model, view);
+        ZEE_SLAGView view =
+                new ZEE_SLAGView();
+        new ZEE_SLAGPresenter(model, view);
         primaryStage.setScene(new Scene(view));
         primaryStage.show();
     }

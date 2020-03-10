@@ -81,4 +81,28 @@ public class ZEE_SLAGView extends GridPane {
         this.multiplayer.setFont(new Font("Times New Roman",30));
         this.multiplayer.setTextFill(Color.DARKRED);
     }
+
+    public Window getStartScreen() {
+        return startScreen;
+    }
+
+    public Button getSingleplayer() {
+        return singleplayer;
+    }
+
+    public Button getMultiplayer() {
+        return multiplayer;
+    }
+
+    public Label getTitle() {
+        return title;
+    }
+
+    public ImageView getLeftImage() {
+        return leftImage;
+    }
+
+    public ImageView getRightImage() {
+        return rightImage;
+    }
 }
