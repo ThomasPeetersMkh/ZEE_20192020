@@ -33,6 +33,18 @@ public class ZEE_SLAGPresenter {
             toevoegenStage.showAndWait();
         }
     });
+    view.getMultiplayer().setOnAction(new EventHandler<ActionEvent>() {
+        @Override
+        public void handle(ActionEvent actionEvent) {
+            PreGameLobbyView preGLView = new PreGameLobbyView();
+            PreGameLobbyPresenter preGLPresenter = new PreGameLobbyPresenter(model,preGLView);
+            Stage toevoegenStage = new Stage();
+            toevoegenStage.initOwner(view.getScene().getWindow());
+            toevoegenStage.initModality(Modality.APPLICATION_MODAL);
+            toevoegenStage.setScene(new Scene(preGLView));
+            toevoegenStage.showAndWait();
+        }
+    });
     }
     private void updateView() {
 // Vult de view met data uit model
