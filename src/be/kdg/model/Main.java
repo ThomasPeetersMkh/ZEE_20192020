@@ -1,4 +1,4 @@
-package be.kdg;
+package be.kdg.model;
 
 import be.kdg.model.ZEE_SLAGModel;
 import be.kdg.view.pregamelobby.PreGameLobbyPresenter;

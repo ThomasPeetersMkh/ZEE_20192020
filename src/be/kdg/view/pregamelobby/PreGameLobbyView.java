@@ -1,6 +1,7 @@
 package be.kdg.view.pregamelobby;
 
 import javafx.collections.FXCollections;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -10,7 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class PreGameLobbyView extends VBox{
+public class PreGameLobbyView extends VBox {
     private Label titel;
     private HBox hb1;
     private HBox hb2;
@@ -36,7 +37,7 @@ public class PreGameLobbyView extends VBox{
         this.bordpv = new Canvas();
         this.boardsize = new Label("Board Size");
         this.custom = new Label("Custom");
-        this.boardsizeoptions = new ComboBox(FXCollections.observableArrayList(3, 4, 5, 6, 7, 8));
+        this.boardsizeoptions = new ComboBox(FXCollections.observableArrayList(3, 4, 5, 6, 7, 8, 9, 10));
         this.boardsizeoptions.getSelectionModel().selectFirst();
         this.tekstveld = new TextField();
         this.labelspeler1 = new Label("High Score");
@@ -46,33 +47,39 @@ public class PreGameLobbyView extends VBox{
 
 
     }
+
     private void layoutNodes() {
         hb1.getChildren().addAll(boardsize, boardsizeoptions, custom, tekstveld);
         this.custom.setAlignment(Pos.CENTER_RIGHT);
         hb2.getChildren().addAll(labelspeler1, highscorespeler1, labelspeler2, highscorespeler2);
-        this.labelspeler2.setAlignment(Pos.CENTER_RIGHT);
-        this.getChildren().addAll(titel,hb1,hb2,bordpv);
+
+        this.labelspeler2.setPadding(new Insets(0,0,0,this.getWidth()-100));
+        this.getChildren().addAll(titel, hb1, hb2, bordpv);
         bordpv.setHeight(100);
         bordpv.setWidth(100);
+        this.setPadding(new Insets(20,20,20,20));
+        this.setAlignment(Pos.CENTER);
 
     }
+
     void drawRaster(int boardsize) {
 
-        double rowHeight = bordpv.getHeight()/boardsize;
-        double columnWidth = bordpv.getWidth()/boardsize;
+        double rowHeight = bordpv.getHeight() / boardsize;
+        double columnWidth = bordpv.getWidth() / boardsize;
         GraphicsContext gc = bordpv.getGraphicsContext2D();
         gc.clearRect(0, 0, bordpv.getWidth(), bordpv.getHeight());
-        for(int i = 1; i<=boardsize;i++){
-            gc.strokeLine(0,rowHeight*i,bordpv.getWidth(),rowHeight*i);
+        for (int i = 1; i <= boardsize; i++) {
+            gc.strokeLine(0, rowHeight * i, bordpv.getWidth(), rowHeight * i);
             System.out.println();
         }
-        for(int i = 1; i<=boardsize;i++){
-            gc.strokeLine(columnWidth*i,0,columnWidth*i,bordpv.getHeight());
+        for (int i = 1; i <= boardsize; i++) {
+            gc.strokeLine(columnWidth * i, 0, columnWidth * i, bordpv.getHeight());
         }
 
     }
 
-    public int getBoardsize() {return (int) this.boardsizeoptions.getValue();
+    public int getBoardsize() {
+        return (int) this.boardsizeoptions.getValue();
     }
 
     public ComboBox getBoardsizeoptions() {

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eecc2c22-40ac-4996-b2ef-0f37b2594d5f" name="Default Changelist" comment="" />
+    <list default="true" id="eecc2c22-40ac-4996-b2ef-0f37b2594d5f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZEE_SLAG/META-INF/ZEE_SLAG.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZEE_SLAG/be/kdg/view/pregamelobby/PreGameLobbyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZEE_SLAG/be/kdg/view/pregamelobby/PreGameLobbyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/kdg/Bord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/kdg/model/Bord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/kdg/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/kdg/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/kdg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/kdg/model/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/kdg/Schip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/kdg/model/Schip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/kdg/Speler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/kdg/model/Speler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/kdg/view/pregamelobby/PreGameLobbyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/kdg/view/pregamelobby/PreGameLobbyView.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Battleship-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -39,9 +50,21 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="be.kdg.Main" />
+      <option name="MAIN_CLASS_NAME" value="be.kdg.model.Main" />
       <module name="ZEE_SLAG" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media" />
       <RunnerSettings RunnerId="Run" />
@@ -79,6 +102,11 @@
       <workItem from="1582662463032" duration="5848000" />
       <workItem from="1583239416348" duration="4042000" />
       <workItem from="1583245737853" duration="951000" />
+      <workItem from="1583252844592" duration="780000" />
+      <workItem from="1583326894997" duration="10065000" />
+      <workItem from="1583487362673" duration="1203000" />
+      <workItem from="1583586449728" duration="599000" />
+      <workItem from="1583840186534" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="Updated Action ComboBox">
       <created>1583246575924</created>
@@ -201,9 +229,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/be/kdg/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/be/kdg/model/Main.java</url>
           <line>29</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/be/kdg/model/Main.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

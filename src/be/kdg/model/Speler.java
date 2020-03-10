@@ -1,4 +1,4 @@
-package be.kdg;
+package be.kdg.model;
 
 public class Speler {
     private String username;

@@ -1,4 +1,4 @@
-package be.kdg;
+package be.kdg.model;
 
 public class Bord {
 
@@ -27,7 +27,7 @@ public class Bord {
             }
         }
     }
-    public boolean schipGeraakt(int doelX, int doelY,Speler speler){
+    public boolean schipGeraakt(int doelX, int doelY, Speler speler){
         if(this.bord[doelX][doelY] != null){
             this.bord[doelX][doelY].updateLevensPunten();
             speler.updateHighscore(1);
